@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+  background: url('/images/stars-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-color: rgba(30, 30, 30, 0.85);
+  border: 1px solid #333;
+  color: #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.list-group {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  background-color: rgba(30, 30, 30, 0.7);
+  border-color: #333;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+.input-group, .form-control, .input-group-text {
+  background-color: rgba(30, 30, 30, 0.7);
+  border-color: #333;
+  color: #e0e0e0;
+}
+
+.input-group-text {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+.button-group .btn {
+  margin-right: 5px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.img-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.galaxy-animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.galaxy-animation {
+  width: 100%;
+  height: 765px;
+  background: url('/images/galaxy-animation.gif') no-repeat center center;
+  background-size: cover;
+    opacity: 0.8;
+}
+
+.animated-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+.learn-more-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+.second-block {
+  padding-top: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.wide-button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.category-buttons .btn {
+  width: calc(25% - 5px);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+.back-to-top {
+  text-align: center;
+  margin: 20px 0;
+}
